@@ -18,8 +18,8 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/features" element={<Features />} />
           <Route path="/teampage" element={<TeamPage />} />
-          <Route path="/loginregisterpage" element={<ComingSoon />} />
-          <Route path="*" element={<LoginRegisterPage />} />
+          <Route path="/loginregisterpage" element={<LoginRegisterPage />} />
+          <Route path="*" element={<ComingSoon/>} />
         </Routes>
       </Suspense>
     </Router>
