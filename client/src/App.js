@@ -7,7 +7,7 @@ const Features = lazy(() => import("./components/Features"));
 const Contact = lazy(() => import("./components/Contact"));
 const TeamPage = lazy(() => import("./components/TeamPage"));
 const ComingSoon = lazy(() => import("./components/ComingSoon"));
-
+const LoginRegisterPage = lazy(() => import("./components/LoginRegisterPage"));
 const App = () => {
   return (
     <Router>
@@ -18,6 +18,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/features" element={<Features />} />
           <Route path="/teampage" element={<TeamPage />} />
+          <Route path="/loginregisterpage" element={<ComingSoon />} />
           <Route path="*" element={<ComingSoon />} />
         </Routes>
       </Suspense>
