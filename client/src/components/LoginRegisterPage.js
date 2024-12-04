@@ -11,27 +11,27 @@ const LoginRegisterPage = () => {
     setError('');
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const endpoint = isLogin ? '/api/users/login' : '/api/users/register';
-    try {
-      const response = await fetch(`http://localhost:8080${endpoint}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, password }),
-      });
-
-      const data = await response.json();
-
-      if (data.id || data[0]?.id) {
+    
+    if (isLogin) {
+      // Login logic
+      const storedUser = JSON.parse(localStorage.getItem(username));
+      if (storedUser && storedUser.password === password) {
         window.location.href = 'http://localhost:3000/';
       } else {
-        setError('Invalid credentials or error during registration.');
+        setError('Invalid username or password.');
       }
-    } catch (error) {
-      setError('An error occurred. Please try again.');
+    } else {
+      // Registration logic
+      const existingUser = localStorage.getItem(username);
+      if (existingUser) {
+        setError('Username already exists.');
+      } else {
+        const newUser = { username, password };
+        localStorage.setItem(username, JSON.stringify(newUser));
+        window.location.href = 'http://localhost:3000/';
+      }
     }
   };
 
