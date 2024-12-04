@@ -44,7 +44,7 @@ export default function PrimaryNavbar() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
-            href="/Commingsoon"
+            href="/loginregisterpage"
             className="text-sm font-semibold text-white bg-indigo-600 px-4 py-2 rounded-md hover:bg-indigo-500 transition duration-200"
           >
             Log in <span aria-hidden="true">&rarr;</span>
