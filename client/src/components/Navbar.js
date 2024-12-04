@@ -87,7 +87,7 @@ export default function PrimaryNavbar() {
               </div>
               <div className="py-6">
                 <a
-                  href="/Commingsoon"
+                  href="/loginregisterpage"
                   className="block rounded-lg bg-indigo-600 px-3 py-2.5 text-base font-semibold text-white hover:bg-indigo-500 transition duration-200"
                 >
                   Log in
