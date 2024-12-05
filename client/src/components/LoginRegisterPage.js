@@ -18,7 +18,7 @@ const LoginRegisterPage = () => {
       // Login logic
       const storedUser = JSON.parse(localStorage.getItem(username));
       if (storedUser && storedUser.password === password) {
-        window.location.href = 'http://localhost:3000/';
+        window.location.href = 'https://team-track-ui.vercel.app/';
       } else {
         setError('Invalid username or password.');
       }
