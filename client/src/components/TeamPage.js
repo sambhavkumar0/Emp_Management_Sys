@@ -26,11 +26,19 @@ const team = [
   },
   {
     name: 'Aditya Thakur',
-    role: 'Backend Developer (Spring Boot Expert)',
+    role: 'Backend Developer',
     imageUrl: 'https://i.ibb.co/ZKd8YxW/1000041075.jpg',
     bio: 'Backend developer with expertise in Spring Boot, building efficient and robust APIs.',
     id: '2141020016',
   },
+  {
+    name: 'Rafi Ahmed Khan',
+    role: 'Full-Stack Developer',
+    imageUrl: 'https://i.ibb.co/GvpQqq7/439633201-919934019909111-4583546015264503235-n.jpg',
+    bio: 'Full Stack Developer skilled in Spring Boot for backend and modern frameworks for seamless, scalable applications.',
+    id: '2141011034',
+}
+
 ];
 
 
