@@ -34,7 +34,7 @@ const team = [
   {
     name: 'Rafi Ahmed Khan',
     role: 'Full-Stack Developer',
-    imageUrl: 'https://i.ibb.co/GvpQqq7/439633201-919934019909111-4583546015264503235-n.jpg',
+    imageUrl: 'https://i.ibb.co/5KCzkHm/image.png',
     bio: 'Full Stack Developer skilled in Spring Boot for backend and modern frameworks for seamless, scalable applications.',
     id: '2141011034',
 }
